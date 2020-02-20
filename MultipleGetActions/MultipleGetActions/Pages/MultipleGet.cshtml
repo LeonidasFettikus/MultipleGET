@@ -1,0 +1,12 @@
+﻿@page "{handler?}"
+@model MultipleGetActions.Pages.MultipleGetModel
+@{
+}
+
+
+
+    <form method="get">
+        <input type="submit" value="Get" />
+        <input type="hidden" name="handler" value="Get2" />
+        <input type="submit" value="Get2" asp-page-handler="Get2" />
+    </form>
